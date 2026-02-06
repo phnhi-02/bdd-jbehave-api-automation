@@ -8,8 +8,6 @@ import org.jbehave.core.io.*;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.reporters.*;
 import org.jbehave.core.steps.*;
-
-import reporter.ConsoleSummaryReporter;
 import steps.UserApiSteps;
 
 public class UserApiStoryRunner extends JUnitStories {
@@ -20,9 +18,7 @@ public class UserApiStoryRunner extends JUnitStories {
     	        .useStoryReporterBuilder(
     	                new StoryReporterBuilder()
     	                        .withDefaultFormats()
-    	                        .withFormats(Format.CONSOLE, Format.TXT)
-//    	                        .withReporters(new ConsoleSummaryReporter())
-    	                        );
+    	                        .withFormats(Format.CONSOLE, Format.TXT));
 
     }
     @Override
@@ -49,7 +45,6 @@ public class UserApiStoryRunner extends JUnitStories {
 
         return embedder;
     }
-
 
     @Override
     public List<String> storyPaths() {

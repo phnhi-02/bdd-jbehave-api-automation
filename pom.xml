@@ -67,8 +67,6 @@
     <!--BUILD CONFIG-->
     <build>
         <plugins>
-
-            <!-- ========= Compile Java ========= -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
