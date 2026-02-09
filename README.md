@@ -1,7 +1,6 @@
 # BDD JBehave API Automation
 
 Tech stack:
-- Java 11
 - Maven
 - JBehave
 - REST Assured
