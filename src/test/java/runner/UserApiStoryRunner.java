@@ -36,7 +36,6 @@ public class UserApiStoryRunner extends JUnitStories {
     @Override
     public Embedder configuredEmbedder() {
         Embedder embedder = super.configuredEmbedder();
-
         String metaFilters = System.getProperty("jbehave.metaFilters");
         if (metaFilters != null) {
             embedder.useMetaFilters(Arrays.asList(metaFilters));
